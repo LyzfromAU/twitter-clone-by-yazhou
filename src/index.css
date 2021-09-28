@@ -1,13 +1,156 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login{
+  text-align: center;
+  height: 100vh;
+  background-color: var(--twitter-background);
+  padding-top: 30vh;
+}
+.login-title{
+  padding: 20px;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding-left: 10px;
+}
+.submit-button{
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+.register{
+  text-align: center;
+  height: 100vh;
+  background-color: var(--twitter-background);
+  padding-top: 20vh;
+}
+.signup-success{
+  color: var(--twitter-color);
+  margin-bottom: 50px;
+}
+.no-account{
+  color: var(--twitter-color);
+}
+.links{
+  text-decoration: none;
+}
+.signout{
+  display: flex;
+  align-items: center;
+}
+.signout-icon{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.signout-icon:hover{
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+.username{
+  cursor: pointer;
+}
+.username:hover{
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follow-list-avatar{
+  margin: 20px;
+}
+.follow-btn{
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 30px !important;
+  margin-left: auto !important;
+  margin-right: 20px !important;
+}
+.unfollow-btn{
+  background-color: red !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 30px !important;
+  margin-left: auto !important;
+  margin-right: 20px !important;
+}
+.signin-to-tweet{
+  text-decoration: none;
+  margin-left: auto;
+}
+.back-icon:hover{
+  color: var(--twitter-color);
+}
+.view-tweetBox{
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
+}
+.view-tweetBox > form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-tweetBox-input{
+  padding: 20px;
+  display: flex;
+}
+.view-tweetBox-input > input{
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+}
+.view-tweetBox-tweet{
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 30px !important;
+}
+.replies{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 420px;
+  margin-bottom: 10px;
+}
+.replies-text{
+  margin-left: 10px;
+}
+.replies-text-title{
+  margin-left: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.time-ago{
+  margin-left: 20px;
+  font-size: medium;
 }

@@ -1,0 +1,50 @@
+.profile-avatar-lg{
+    width: 100px !important;
+    height: 100px !important;
+    margin: 20px;
+}
+.profile-displayName{
+    margin: 20px;
+}
+.profile-joinTime{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.profile-joinTime-text{
+    margin-left: 10px;
+}
+.profile-follow-sum{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.profile-follow{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.profile-follow:hover{
+    color: var(--twitter-color);
+    text-decoration: underline;
+}
+.profile-follow-bar{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--twitter-background);
+}
+.profile-follow-bar > div{
+    flex: 0.5;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+}
+.profile-follow-bar > div:hover{
+    background-color: var(--twitter-background);
+}
+.profile-follow-option{
+    cursor: pointer;
+}
+.profile-follow-active{
+    border-bottom: 3px solid var(--twitter-color);
+}
